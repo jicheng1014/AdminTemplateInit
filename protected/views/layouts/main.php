@@ -163,7 +163,7 @@
                 <ul id="menu" class="unstyled accordion collapse in">
                     <li class="accordion-group active">
                         <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#dashboard-nav">
-                            <i class="icon-dashboard icon-large"></i> Dashboard <span
+                            <i class="icon-dashboard icon-large"></i> 主面板 <span
                                 class="label label-inverse pull-right">2</span>
                         </a>
                         <ul class="collapse in" id="dashboard-nav">
@@ -180,17 +180,7 @@
                             <li><a href="progress.html"><i class="icon-angle-right"></i> Progress</a></li>
                         </ul>
                     </li>
-                    <li class="accordion-group ">
-                        <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle collapsed" data-target="#form-nav">
-                            <i class="icon-pencil icon-large"></i> Forms <span class="label label-inverse pull-right">4</span>
-                        </a>
-                        <ul class="collapse " id="form-nav">
-                            <li><a href="form-general.html"><i class="icon-angle-right"></i> General</a></li>
-                            <li><a href="form-validation.html"><i class="icon-angle-right"></i> Validation</a></li>
-                            <li><a href="form-wysiwyg.html"><i class="icon-angle-right"></i> WYSIWYG</a></li>
-                            <li><a href="form-wizard.html"><i class="icon-angle-right"></i> Wizard &amp; File Upload</a></li>
-                        </ul>
-                    </li>
+                    
                     <li><a href="table.html"><i class="icon-table icon-large"></i> Tables</a></li>
                     <li><a href="file.html"><i class="icon-file icon-large"></i> File Manager</a></li>
                     <li><a href="typography.html"><i class="icon-font icon-large"></i> Typography</a></li>
