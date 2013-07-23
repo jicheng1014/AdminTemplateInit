@@ -42,56 +42,51 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </a>
-                            <a class="brand" href="index.html">Metis</a>
+                            <a class="brand" href="index.html">基线监测管理系统</a>
                             <!-- .topnav -->
                             <div class="btn-toolbar topnav">
                                 <div class="btn-group">
                                     <a id="changeSidebarPos" class="btn btn-success" rel="tooltip"
-                                       data-original-title="Show / Hide Sidebar" data-placement="bottom">
+                                       data-original-title="显示/隐藏主菜单" data-placement="bottom">
                                         <i class="icon-resize-horizontal"></i>
                                     </a>
                                 </div>
                                 <div class="btn-group">
-                                    <a class="btn btn-inverse" rel="tooltip" data-original-title="E-mail" data-placement="bottom">
+                                    <a class="btn btn-inverse" rel="tooltip" data-original-title="通用警报配置" data-placement="bottom">
                                         <i class="icon-envelope"></i>
                                         <span class="label label-warning">5</span>
                                     </a>
-                                    <a class="btn btn-inverse" rel="tooltip" href="#" data-original-title="Messages"
-                                       data-placement="bottom">
-                                        <i class="icon-comments"></i>
-                                        <span class="label label-important">4</span>
-                                    </a>
+                                   
                                 </div>
                                 <div class="btn-group">
-                                    <a class="btn btn-inverse" rel="tooltip" href="#" data-original-title="Document"
+                                    <a class="btn btn-inverse" rel="tooltip" href="#" data-original-title="新建监控客户端"
                                        data-placement="bottom">
                                         <i class="icon-file"></i>
                                     </a>
                                     <a href="#helpModal" class="btn btn-inverse" rel="tooltip" data-placement="bottom"
-                                       data-original-title="Help" data-toggle="modal">
+                                       data-original-title="帮助" data-toggle="modal">
                                         <i class="icon-question-sign"></i>
                                     </a>
                                 </div>
                                 <div class="btn-group">
-                                    <a class="btn btn-inverse" data-placement="bottom" data-original-title="Logout" rel="tooltip"
+                                    <a class="btn btn-inverse" data-placement="bottom" data-original-title="登出" rel="tooltip"
                                        href="login.html"><i class="icon-off"></i></a></div>
                             </div>
                             <!-- /.topnav -->
                             <div class="nav-collapse collapse">
                                 <!-- .nav -->
                                 <ul class="nav">
-                                    <li class="active"><a href="index.html">Dashboard</a></li>
-                                    <li><a href="table.html">Tables</a></li>
-                                    <li><a href="file.html">File Manager</a></li>
+                                    <li class="active"><a href="index.html">主面板</a></li>
+                                    <li><a href="table.html">监视器</a></li>
+                                    <li><a href="file.html"></a></li>
                                     <li class="dropdown">
                                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                            Form Elements <b class="caret"></b>
+                                            系统报表<b class="caret"></b>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="form-general.html">General</a></li>
-                                            <li><a href="form-validation.html">Validation</a></li>
-                                            <li><a href="form-wysiwyg.html">WYSIWYG</a></li>
-                                            <li><a href="form-wizard.html">Wizard &amp; File Upload</a></li>
+                                            <li><a href="form-general.html">日报表</a></li>
+                                            <li><a href="form-validation.html">周报表</a></li>
+                                            <li><a href="form-wysiwyg.html">月报表</a></li>
                                         </ul>
                                     </li>
                                 </ul>
