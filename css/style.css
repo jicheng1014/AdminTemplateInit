@@ -510,17 +510,16 @@ body.fixed .pattern-switcher {
 #menu > li > a:hover,
 #menu > li.hover > a,
 #menu > li.active > a {
-  background-color: #cc004d;
-  background-image: -moz-linear-gradient(top, #ff0080, #800000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff0080), to(#800000));
-  background-image: -webkit-linear-gradient(top, #ff0080, #800000);
-  background-image: -o-linear-gradient(top, #ff0080, #800000);
-  background-image: linear-gradient(to bottom, #ff0080, #800000);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff0080', endColorstr='#ff800000', GradientType=0);
-  -webkit-box-shadow: 0 1px 0 0 #9a004d inset;
-  -moz-box-shadow: 0 1px 0 0 #9a004d inset;
-  box-shadow: 0 1px 0 0 #9a004d inset;
+background: rgb(53,106,160); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 51%, rgba(35,68,104,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,106,160,1)), color-stop(51%,rgba(53,106,160,1)), color-stop(100%,rgba(35,68,104,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 51%,rgba(35,68,104,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 51%,rgba(35,68,104,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 51%,rgba(35,68,104,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 51%,rgba(35,68,104,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#234468',GradientType=0 ); /* IE6-9 */
+
+
   -webkit-transition: height 0.4s ease-out 0s;
   -moz-transition: height 0.4s ease-out 0s;
   -o-transition: height 0.4s ease-out 0s;
