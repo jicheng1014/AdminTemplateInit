@@ -6,7 +6,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Dashboard</title>
+        <title>
+        <?php echo CHtml::encode($this->pageTitle); ?>
+        </title>
         <meta name="description" content="Metis: Bootstrap Responsive Admin Theme">
         <meta name="viewport" content="width=device-width">
         <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
@@ -113,7 +115,7 @@
                                 </a>
 
                                 <form class="main-search">
-                                    <input class="input-block-level" type="text" placeholder="Live search...">
+                                    <input class="input-block-level" type="text" placeholder="快速搜索监控机...">
                                     <button id="searchBtn" type="submit" class="btn btn-inverse"><i class="icon-search"></i>
                                     </button>
                                 </form>
@@ -162,11 +164,11 @@
                 <!-- BEGIN MAIN NAVIGATION -->
                 <ul id="menu" class="unstyled accordion collapse in">
 
-                    <li class="active"><a href="index.php"><i class="icon-dashboard icon-large"></i>主面板</a></li>
+                            <li class="<?php echo $this->currentCategory=="Dashboard"?"active":""; ?>"><a href="index.php"><i class="icon-dashboard icon-large"></i>主面板</a></li>
 
                    
 
-                    <li class="accordion-group ">
+                    <li class="accordion-group <?php echo $this->currentCategory=="Component"?"active":""; ?>">
                         <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#component-nav">
                             <i class="icon-tasks icon-large"></i> 监控端管理 <span class="label label-inverse pull-right">2</span>
                         </a>
@@ -176,7 +178,8 @@
                         </ul>
                     </li>
                     
-					<li class="accordion-group">
+
+					<li class="accordion-group <?php echo $this->currentCategory=="Diff"?"active":""; ?>">
 						<a data-parent="#menu" data-target="#diff-nav" class="accordion-toggle" data-toggle="collapse">
                             <i class="icon-camera-retro icon-large"></i> 快照比较查看<span class="label label-inverse pull-right">3</span>
 						</a>
@@ -186,7 +189,7 @@
 						        <li><a href=""><i class="icon-angle-right">初始基线比较</i></a></li>
 						</ul>
 					</li>
-                    <li class="accordion-group ">
+                    <li class="accordion-group <?php echo $this->currentCategory=="Error"?"active":""; ?> ">
                         <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#error-nav">
                             <i class="icon-flag-checkered icon-large"></i> 警报系统 <span
                                 class="label label-inverse pull-right">7</span>
@@ -201,7 +204,7 @@
                             <li><a href="countdown.html"><i class="icon-angle-right"></i> Under Construction</a></li>
                         </ul>
                     </li>
-					<li class="accordion-group ">
+					<li class="accordion-group <?php echo $this->currentCategory=="Report"?"active":""; ?>">
                         <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#report-nav">
                             <i class="icon-calendar-empty icon-large"></i> 报表系统 <span
                                 class="label label-inverse pull-right">3</span>
@@ -212,7 +215,8 @@
                             <li><a href="404.html"><i class="icon-angle-right"></i>月报彪</a></li>
                         </ul>
                     </li>
-                    <li><a href="grid.html"><i class="icon-wrench icon-large"></i> 系统设置</a></li>
+                    <li class="<?php echo $this->currentCategory=="Monitor"?"active":""; ?>"><a href="grid.html"><i class="icon-eye-open icon-large"></i> 监视器</a></li>
+                    <li class="<?php echo $this->currentCategory=="Setting"?"active":""; ?>"><a href="grid.html"><i class="icon-wrench icon-large"></i> 系统设置</a></li>
                     <li><a href="login.html"><i class="icon-signin icon-large"></i> 登出系统</a></li>
                 </ul>
                 <!-- END MAIN NAVIGATION -->

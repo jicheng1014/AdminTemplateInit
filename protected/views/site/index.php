@@ -1,3 +1,7 @@
+<?php 
+    $this->pageTitle="主控面板";
+    $this->currentCategory= "Dashboard";
+ ?>
 <div class="tac">
                                 <ul class="stats_box">
                                     <li>
