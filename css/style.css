@@ -1177,3 +1177,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', end
 }
 /*COMMENTS*/
 /* --------------- END Component Styles -------------------- */
+
+
+
+
+.stats_box .stat_text .percent.red{
+  color: #C52F61;
+}
+
+.stats_box .stat_text .percent.green{
+  color: #46a546;
+}

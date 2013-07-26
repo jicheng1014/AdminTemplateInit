@@ -53,13 +53,7 @@
                                         <i class="icon-resize-horizontal"></i>
                                     </a>
                                 </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-inverse" rel="tooltip" data-original-title="通用警报配置" data-placement="bottom">
-                                        <i class="icon-envelope"></i>
-                                        <span class="label label-warning">5</span>
-                                    </a>
-                                   
-                                </div>
+                              
                                 <div class="btn-group">
                                     <a class="btn btn-inverse" rel="tooltip" href="#" data-original-title="新建监控客户端"
                                        data-placement="bottom">
@@ -130,7 +124,7 @@
                     <div class="container-fluid">
                         <div class="row-fluid">
                             <div class="span12">
-                                <h3><i class="icon-home"></i> Dashboard</h3>
+                                <h3><i class="icon-home"></i>   <?php echo CHtml::encode($this->pageTitle); ?></h3>
                             </div>
                         </div>
                         <!-- /.row-fluid -->

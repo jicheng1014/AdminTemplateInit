@@ -1,261 +1,248 @@
 <?php 
-    $this->pageTitle="主控面板";
+    $this->
+pageTitle="主控面板";
     $this->currentCategory= "Dashboard";
  ?>
 <div class="tac">
-                                <ul class="stats_box">
-                                    <li>
-                                        <div class="sparkline bar_week"></div>
-                                        <div class="stat_text">
-                                            <strong>2.345</strong>Weekly Visit
-                                            <span class="percent down"> <i class="icon-caret-down"></i> -16%</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sparkline line_day"></div>
-                                        <div class="stat_text">
-                                            <strong>165</strong>Daily Visit
-                                            <span class="percent up"> <i class="icon-caret-up"></i> +23%</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sparkline pie_week"></div>
-                                        <div class="stat_text">
-                                            <strong>$2 345.00</strong>Weekly Sale
-                                            <span class="percent"> 0%</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sparkline stacked_month"></div>
-                                        <div class="stat_text">
-                                            <strong>$678.00</strong>Monthly Sale
-                                            <span class="percent down"> <i class="icon-caret-down"></i> -10%</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <hr>
-                            <div class="tac">
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-bolt icon-2x"></i>
-                                    <span>inverse</span>
-                                    <span class="label label-inverse">2</span>
-                                </a>
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-check icon-2x"></i>
-                                    <span>important</span>
-                                    <span class="label label-important">2</span>
-                                </a>
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-building icon-2x"></i>
-                                    <span>No Label</span>
-                                </a>
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-envelope icon-2x"></i>
-                                    <span>success</span>
-                                    <span class="label label-success">-456</span>
-                                </a>
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-signal icon-2x"></i>
-                                    <span>warning</span>
-                                    <span class="label label-warning">+25</span>
-                                </a>
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-external-link icon-2x"></i>
-                                    <span>&pi;</span>
-                                    <span class="label btn-metis-2">3.14159265</span>
-                                </a>
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-lemon icon-2x"></i>
-                                    <span>&eacute;</span>
-                                    <span class="label btn-metis-4">2.71828</span>
-                                </a>
-                                <a class="quick-btn" href="#">
-                                    <i class="icon-glass icon-2x"></i>
-                                    <span>&phi;</span>
-                                    <span class="label btn-metis-3">1.618</span>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="row-fluid">
-                                <div class="span8">
-                                    <div class="box">
-                                        <header>
-                                            <h5>Line Chart</h5>
-                                        </header>
-                                        <div class="body" id="trigo" style="height: 250px;"></div>
-                                    </div>
-                                </div>
-                                <div class="span4">
-                                    <div class="box">
-                                        <div class="body">
-                                            <table class="table table-bordered table-condensed table-hovered sortableTable">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Country <i class="icon-sort"></i><i class="icon-sort-down"></i><i
-                                                                class="icon-sort-up"></i></th>
-                                                        <th>Visit <i class="icon-sort"></i><i class="icon-sort-down"></i><i
-                                                                class="icon-sort-up"></i></th>
-                                                        <th>Time <i class="icon-sort"></i><i class="icon-sort-down"></i><i
-                                                                class="icon-sort-up"></i></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Andorra</td>
-                                                        <td>1126</td>
-                                                        <td>00:00:15</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Belarus</td>
-                                                        <td>350</td>
-                                                        <td>00:01:20</td>
-                                                    </tr>
-                                                    <tr class="error">
-                                                        <td>Paraguay</td>
-                                                        <td>43</td>
-                                                        <td>00:00:30</td>
-                                                    </tr>
-                                                    <tr class="info">
-                                                        <td>Malta</td>
-                                                        <td>547</td>
-                                                        <td>00:10:20</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Australia</td>
-                                                        <td>560</td>
-                                                        <td>00:00:10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Kenya</td>
-                                                        <td>97</td>
-                                                        <td>00:20:00</td>
-                                                    </tr>
-                                                    <tr class="success">
-                                                        <td>Italy</td>
-                                                        <td>2450</td>
-                                                        <td>00:10:00</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row-fluid">
-                                <div class="span8">
-                                    <div class="box">
-                                        <header>
-                                            <h5>Calendar</h5>
-                                        </header>
-                                        <div id="calendar_content" class="body">
-                                            <div id='calendar'></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="span4">
-                                    <div class="box">
-                                        <header>
-                                            <div class="icons"><i class="icon-tags"></i></div>
-                                            <h5>Todos</h5>
-                                        </header>
-                                        <div class="block">
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>sdg</td>
-                                                        <td>dsfg</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>sdfg</td>
-                                                        <td>dfg</td>
-                                                    </tr>
-                                                    <tr class="success">
-                                                        <td>dsfg</td>
-                                                        <td>dfg</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>dfgh</td>
-                                                        <td>dfh</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>dfgh</td>
-                                                        <td>dfhg</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ddfghdfgh</td>
-                                                        <td>dfh</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>dfh</td>
-                                                        <td>ddfhdh</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--BEGIN LATEST COMMENT-->
-                            <!-- .row-fluid -->
-                            <div class="row-fluid">
-                                <!-- .span6 -->
-                                <div class="span6">
-                                    <!-- .box -->
-                                    <div class="box comments">
-                                        <header>
-                                            <div class="icons">
-                                                <i class="icon-comments"></i>
-                                            </div>
-                                            <h5>Latest Comment</h5>
-                                        </header>
-                                        <!-- .body -->
-                                        <div class="body">
-                                            <div class="media">
-                                                <a href="#" class="pull-left">
-                                                    <img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACGklEQVR4nO2V0XKaUBRF8/+fckREJSYmirY2HWtJBxMnMtV2qCGFoL2/sPsAdRKjD62Q3WnPw3qBM2eWiwueGGPwP3PCFmCjAdgCbDQAW4CNBmALsNEAbAE2GoAtwEYDsAXYaAC2ABsNwBZgowHYAmw0AFuAjQZgC7DRAGwBNn8cYL28xsCtQ0QKOgiS5zObxQiN4n5zvPqr9h8VYB0OYYvA9m5xf2hu/RlvHAt2/fcFq95/ZIAVxi2BSBezx0Mza4RDG1bXx81b55lgNvdgiUA613gwBiadoisCkQvcJMfvrz7AwyecikDEQtOx8uNpuRgG0XYmmw9gSRPjVYboaldwg3CYH+1zP0RwKRCpoTdLS9pfdYDoPZzivXMnEYz5Bt/NhfvzDCa7g2cJar0ZHo3ZL7hZYNSQ7ftt9e+Qlbm/0gDxBG0RiLTw4T6/Fn908x/iLZFMzyDS3t47JBj7bhHAwVVU/v7qAvxYYGDtF6wPvyIJzp58uXfoBEiMgUlv0as9vV58D8raX2kAYxBP3D1H1MG7Ly9nXz6hBNOL/Eh7swjhqAERwakfl7T/FQIYs8HS76P16yk2LzEO072zu4Lfg3OI5O9wakz+d2YLRNoYR8fvf6UA/w4agC3ARgOwBdhoALYAGw3AFmCjAdgCbDQAW4CNBmALsNEAbAE2GoAtwEYDsAXYaAC2ABsNwBZgowHYAmw0AFuAzU+QYREQ9dxBOwAAAABJRU5ErkJggg==">
-                                                </a>
-                                                <div class="media-body">
-                                                    <div class="popover right">
-                                                        <div class="arrow"></div>
-                                                        <h3 class="popover-title">Popover right</h3>
-                                                        <div class="popover-content">
-                                                            <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media">
-                                                <a href="#" class="pull-right">
-                                                    <img data-src="holder.js/64x64" class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACGklEQVR4nO2V0XKaUBRF8/+fckREJSYmirY2HWtJBxMnMtV2qCGFoL2/sPsAdRKjD62Q3WnPw3qBM2eWiwueGGPwP3PCFmCjAdgCbDQAW4CNBmALsNEAbAE2GoAtwEYDsAXYaAC2ABsNwBZgowHYAmw0AFuAjQZgC7DRAGwBNn8cYL28xsCtQ0QKOgiS5zObxQiN4n5zvPqr9h8VYB0OYYvA9m5xf2hu/RlvHAt2/fcFq95/ZIAVxi2BSBezx0Mza4RDG1bXx81b55lgNvdgiUA613gwBiadoisCkQvcJMfvrz7AwyecikDEQtOx8uNpuRgG0XYmmw9gSRPjVYboaldwg3CYH+1zP0RwKRCpoTdLS9pfdYDoPZzivXMnEYz5Bt/NhfvzDCa7g2cJar0ZHo3ZL7hZYNSQ7ftt9e+Qlbm/0gDxBG0RiLTw4T6/Fn908x/iLZFMzyDS3t47JBj7bhHAwVVU/v7qAvxYYGDtF6wPvyIJzp58uXfoBEiMgUlv0as9vV58D8raX2kAYxBP3D1H1MG7Ly9nXz6hBNOL/Eh7swjhqAERwakfl7T/FQIYs8HS76P16yk2LzEO072zu4Lfg3OI5O9wakz+d2YLRNoYR8fvf6UA/w4agC3ARgOwBdhoALYAGw3AFmCjAdgCbDQAW4CNBmALsNEAbAE2GoAtwEYDsAXYaAC2ABsNwBZgowHYAmw0AFuAzU+QYREQ9dxBOwAAAABJRU5ErkJggg==">
-                                                </a>
-                                                <div class="media-body">
-                                                    <div class="popover left">
-                                                        <div class="arrow"></div>
-                                                        <h3 class="popover-title">Popover right</h3>
-                                                        <div class="popover-content">
-                                                            <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /.body -->
-                                    </div>
-                                    <!-- /.box -->
-                                </div>
-                                <!-- /.span6 -->
-                                <!-- .span6 -->
-                                <div class="span6">
-                                    <!-- .box -->
-                                    <div class="box">
-                                        <header></header>
-                                        <!-- .body -->
-                                        <div class="body"></div>
-                                        <!-- /.body -->
-                                    </div>
-                                    <!-- /.box -->
-                                </div>
-                                <!-- /.span6 -->
-                            </div>
+    <a class="quick-btn" href="#"> <i class="icon-desktop icon-2x"></i>
+        <span>监控总数</span>
+        <span class="label label-inverse">21</span>
+    </a>
+    <a class="quick-btn" href="#"> <i class="icon-exclamation icon-2x"></i>
+        <span>今日异动数</span>
+        <span class="label label-important">2</span>
+    </a>
+    <a class="quick-btn" href="#">
+        <i class="icon-user icon-2x"></i>
+        <span>用户数</span>
+        <span class="label btn-metis-3">3</span>
+    </a>
+    <a class="quick-btn" href="#">
+        <i class="icon-envelope icon-2x"></i>
+        <span>监控模板数</span>
+        <span class="label label-success">3</span>
+    </a>
+    <a class="quick-btn" href="#">
+        <i class="icon-laptop icon-2x"></i>
+        <span>添加监控机</span>
+    </a>
+    <a class="quick-btn" href="#">
+        <i class="icon-male icon-2x"></i>
+        <span>添加用户</span>
+    </a>
+    <a class="quick-btn" href="#">
+        <i class="icon-bolt icon-2x"></i>
+        <span>报警配置</span>
+        
+    </a>
+
+</div>
+<hr>
+<div class="row-fluid">
+    <div class="span8">
+        <div class="box">
+            <header>
+                <h5>最近添加监控主机列表</h5>
+                <div class="toolbar">
+                    <span class="label label-info">更多...</span>
+                </div>
+            </header>
+            <div class="body" id="trigo" style="min-height: 250px;">
+                <table class="table table-bordered table-condensed table-hovered sortableTable">
+                    <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>主机名</th>
+                            <th>IP</th>
+                            <th>添加时间</th>
+
+                            <th>是否在线</th>
+                            <th>查看</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>1</td>
+                            <td>client_1</td>
+                            <td>192.168.168.19</td>
+                            <td>2013-07-25 09:00:00</td>
+                            <td>
+                                <span class="badge badge-success">在线</span>
+                            </td>
+                            <td>
+                                <a href="www.google.com">查看</a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>client_1</td>
+                            <td>192.168.168.19</td>
+                            <td>2013-07-25 09:00:00</td>
+                            <td>
+                                <span class="badge badge-success">在线</span>
+                            </td>
+                            <td>
+                                <a href="www.google.com">查看</a>
+                            </td>
+                        </tr>
+
+                        <tr class="error">
+                            <td>3</td>
+                            <td>client_1</td>
+                            <td>192.168.168.19</td>
+                            <td>20/13-07-25 09:00:00</td>
+                            <td>
+                                <span class="badge badge-success">在线</span>
+                            </td>
+                            <td>
+                                <a href="www.google.com">查看</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>client_1</td>
+                            <td>192.168.168.19</td>
+                            <td>2013-07-25 09:00:00</td>
+                            <td>
+                                <span class="badge badge-success">在线</span>
+                            </td>
+                            <td>
+                                <a href="www.google.com">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>client_1</td>
+                            <td>192.168.168.19</td>
+                            <td>2013-07-25 09:00:00</td>
+                            <td>
+                                <span class="badge">下线</span>
+                            </td>
+                            <td>
+                                <a href="www.google.com">查看</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="span4">
+        <div class="box">
+             <header>
+                <h5>最近用户登录列表</h5>
+                <div class="toolbar">
+                    <span class="label label-info">更多...</span>
+                </div>
+            </header>
+            <div class="body"  style="min-height: 250px;">
+                <table class="table table-bordered table-condensed table-hovered sortableTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                用户名 
+                             
+                            </th>
+                            <th>
+                                
+                                IP
+                             
+                            </th>
+                            <th>
+                                登录时间
+                              
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>admin</td>
+                            <td>192.168.1.19</td>
+                            <td>2013-07-26 09:00:00</td>
+                        </tr>
+                        <tr>
+                            <td>admin</td>
+                            <td>192.168.1.19</td>
+                            <td>2013-07-26 09:00:00</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row-fluid">
+    <div class="span8">
+        <div class="box">
+            <header>
+                <h5>最近警告列表</h5>
+            </header>
+            <div id="calendar_content" class="body">
+                <div id='calendar'></div>
+            </div>
+        </div>
+    </div>
+    <div class="span4">
+
+        <div class="box">
+            <header>
+                <h5>快速监控区今日异动文件</h5>
+            </header>
+            <div class="body">
+                <ul class="stats_box">
+                    <li>
+                        <div class="sparkline">
+                            <div><i class="icon-hdd icon-3x"></i></div>
+                        </div>
+                        <div class="stat_text"> <strong>监控服务器1</strong>
+                            <span>二小区</span>
+                            <span class="percent">
+                                8
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sparkline">
+                            <div><i class="icon-hdd icon-3x"></i></div>
+                        </div>
+                        <div class="stat_text"> <strong>监控服务器2</strong>
+                            <span>二小区</span>
+                            <span class="percent red">
+                                21
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sparkline">
+                            <div><i class="icon-hdd icon-3x"></i></div>
+                        </div>
+                        <div class="stat_text"> <strong>监控服务器3</strong>
+                            <span>二小区</span>
+                            <span class="percent green">
+                                0
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sparkline">
+                            <div><i class="icon-hdd icon-3x"></i></div>
+                        </div>
+                        <div class="stat_text"> <strong>监控服务器4</strong>
+                            <span>二小区</span>
+                            <span class="percent">
+                                18
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
