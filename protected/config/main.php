@@ -81,7 +81,7 @@ return array(
 		),
 		'messages' => array (
 			// Pending on core: http://code.google.com/p/yii/issues/detail?id=2624
-			'extensionBasePaths' => array(
+			'extensionPaths' => array(
 				'giix' => 'ext.giix.messages', // giix messages directory.
 			),
 		),
