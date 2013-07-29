@@ -7,8 +7,8 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
-
+	'name'=>'基于基线的安全对比系统',
+	//'language'=>'zh_cn',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -17,11 +17,32 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'ext.giix.components.*',
+		'application.modules.user.models.*',
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
+		'user' => array(
+			'debug' => false,
+			'userTable' => 'user',
+			'translationTable' => 'translation',
+		),
+		'profile' => array(
+			'privacySettingTable' => 'privacysetting',
+			'profileTable' => 'profile',
+			'profileCommentTable' => 'profile_comment',
+			'profileVisitTable' => 'profile_visit',
+		),
+		'role' => array(
+			'roleTable' => 'role',
+			'userRoleTable' => 'user_role',
+			'actionTable' => 'action',
+			'permissionTable' => 'permission',
+		),
+		'message' => array(
+			'messageTable' => 'message',
+		),
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'generatorPaths' => array(
@@ -31,13 +52,16 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+
 		
 	),
 
 	// application components
 	'components'=>array(
 		'user'=>array(
-			// enable cookie-based authentication
+		    'class' => 'application.modules.user.components.YumWebUser',
+		    'allowAutoLogin'=>true,
+			'loginUrl' => array('//user/user/login'),
 			'allowAutoLogin'=>true,
 		),
 		
@@ -58,12 +82,14 @@ return array(
 			'username' => 'root',
 			'password' => 'root',
 			'charset' => 'utf8',
+			'tablePrefix' => '',
 		),
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),
+		'cache' => array('class' => 'system.caching.CDummyCache'),
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
