@@ -216,7 +216,7 @@ if(!isset($this->currentCategory)){
                     </li>
                     <li class="<?php echo $this->currentCategory=="Monitor"?"active":""; ?>"><a href="grid.html"><i class="icon-eye-open icon-large"></i> 监视器</a></li>
                     <li class="<?php echo $this->currentCategory=="Setting"?"active":""; ?>"><a href="grid.html"><i class="icon-wrench icon-large"></i> 系统设置</a></li>
-                    <li><a href="login.html"><i class="icon-signin icon-large"></i> 登出系统</a></li>
+                    <li><a href="<?php echo $this->createUrl('//user/user/logout')?>"><i class="icon-signin icon-large"></i> 登出系统</a></li>
                 </ul>
                 <!-- END MAIN NAVIGATION -->
 

@@ -2,6 +2,13 @@
 
 class SiteController extends Controller
 {
+
+	public function filters(){
+		return array(
+			'accessControl'
+		);
+	}
+
 	/**
 	 * Declares class-based actions.
 	 */
@@ -17,6 +24,17 @@ class SiteController extends Controller
 			// They can be accessed via: index.php?r=site/page&view=FileName
 			'page'=>array(
 				'class'=>'CViewAction',
+			),
+		);
+	}
+
+	public  function accessRules(){
+		return array(
+			array('allow',
+				'users'=>array("@"),
+			),
+			array('deny',  // deny all other users
+				'users'=>array('*'),
 			),
 		);
 	}

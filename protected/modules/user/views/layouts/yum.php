@@ -25,7 +25,7 @@ $this->beginContent(Yum::module()->baseLayout); ?>
 </div>
 <div class="row-fluid">
 	
-	<div class="span3">
+	<div class="span12">
 		<?php $this->renderMenu(); ?>
 	</div>
 
