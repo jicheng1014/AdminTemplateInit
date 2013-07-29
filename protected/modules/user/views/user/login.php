@@ -41,7 +41,8 @@ $this->breadcrumbs=array(Yum::t('Login'));?>
     <body>
         <div class="container">
             <div class="text-center">
-                <img src="assets/img/logo.png" alt="Metis Logo">
+                <!-- <img src="assets/img/logo.png" alt="Metis Logo"> -->
+                 基线对比管理系统
             </div>
             <div class="tab-content">
                 <div id="login" class="tab-pane active">

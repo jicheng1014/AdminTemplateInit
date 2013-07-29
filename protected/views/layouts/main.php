@@ -71,7 +71,7 @@ if(!isset($this->currentCategory)){
                                 </div>
                                 <div class="btn-group">
                                     <a class="btn btn-inverse" data-placement="bottom" data-original-title="登出" rel="tooltip"
-                                       href="login.html"><i class="icon-off"></i></a></div>
+                                       href="<?php echo $this->createUrl('//user/user/logout')?>"><i class="icon-off"></i></a></div>
                             </div>
                             <!-- /.topnav -->
                             <div class="nav-collapse collapse">
