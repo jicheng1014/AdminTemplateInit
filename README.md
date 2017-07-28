@@ -9,3 +9,4 @@ AdminTemplateInit
 
 
 
+[](http://localhost:3000/)
